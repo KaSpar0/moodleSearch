@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Moodle Search",
+  "description": "Extension creating a list of Moodle sites in a given country.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/index.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://stats.moodle.org/sites/*"]
+    }
+  ]
+}
